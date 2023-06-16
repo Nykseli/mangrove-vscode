@@ -43,6 +43,12 @@ import
 	isUnsafe,
 } from './recogniser'
 
+import {greet_arg, Tokeniser as ITokeniser2} from 'tokeniser-rs'
+
+export class Tokeniser2 extends ITokeniser2 {
+	public next() {return super.next_token()}
+}
+
 export class Tokeniser
 {
 	private _file: TextDocument
@@ -643,5 +649,10 @@ export class Tokeniser
 			token += this.nextChar()
 		}
 		return token
+	}
+
+	static greeter(args: string): string
+	{
+		return greet_arg(args)
 	}
 }

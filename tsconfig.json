@@ -3,7 +3,7 @@
 		"module": "CommonJS",
 		"target": "ES6",
 		"outDir": "build",
-		"lib": ["ES6"],
+		"lib": ["ES6", "DOM"],
 		"sourceMap": true,
 		"strict": true,
 		"noUnusedLocals": true,
@@ -11,7 +11,7 @@
 		"noImplicitReturns": true,
 		"noFallthroughCasesInSwitch": true
 	},
-	"include": ["src"],
+	"include": ["src", "tokeniser-rs/pkg"],
 	"exclude": [
 		"node_modules"
 	]

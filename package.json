@@ -41,6 +41,7 @@
 		"installDevExtension": "npm install && ./node_modules/.bin/vsce package -o ./build/mangrove-vscode-dev.vsix && code --install-extension ./build/mangrove-vscode-dev.vsix"
 	},
 	"dependencies": {
+		"tokeniser-rs": "file:tokeniser-rs/pkg",
 		"ts-results": "^3.3.0",
 		"tslib": "^2.4.0",
 		"vscode-languageclient": "^7.0.0",
